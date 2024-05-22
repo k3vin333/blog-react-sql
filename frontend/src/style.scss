@@ -1,14 +1,24 @@
 $lightPurple : #D6B4FC;
 
 .app{
+    display: flex;
+    justify-content: center;
     .container{
+        width: 1042px;
+
         //LOGIN AND REGISTER
+        .link{
+            text-decoration: none;
+            color:inherit
+        }
+
         .auth{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
+            
             background-color: $lightPurple;
         }
 
@@ -46,6 +56,22 @@ $lightPurple : #D6B4FC;
             span {
                 font-size: 12px;
                 text-align: center;
+            }
+        }
+
+        //NAVBAR
+        .navbar{
+            .container{
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                .logo{
+                    
+                }
+                .links{
+                    display: flex;
+                    gap: 10px;
+                }
             }
         }
 
